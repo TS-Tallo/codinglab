@@ -56,16 +56,16 @@ https://github.com/TS-Tallo/codinglab
 # Commit 4: Task 3 (sumRange)
 
 ## Which tests in Task3Test were failing before your fix?
--
+- CodingRoomsUnitTests.testSumRangeReverseOrder expected 15 but was 0
 
 ## What was the issue in the code?
--
+- The loop only runs while `start <= end`, so a reversed range never adds anything and returns 0.
 
 ## What change did you make to fix it?
--
+- Swapped `start` and `end` when `start > end`, then kept the inclusive sum.
 
 ## How did the tests help guide your fix?
--
+- The only failure was the reverse-order case. Forward order already returned the right sum, so the missing behavior was summing the same range when the arguments are reversed.
 
 ---
 

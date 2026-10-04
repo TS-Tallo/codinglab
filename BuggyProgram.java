@@ -26,6 +26,12 @@ public class BuggyProgram {
 
     // Method 3: loop with bounds (no array)
     public static int sumRange(int start, int end) {
+        if (start > end) {
+            int temp = start;
+            start = end;
+            end = temp;
+        }
+
         int sum = 0;
 
         for (int i = start; i <= end; i++) {
