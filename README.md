@@ -4,33 +4,34 @@
 Joseph Wacha
 
 ## GitHub Repository URL
-Paste your GitHub repository URL here.
+https://github.com/TS-Tallo/codinglab
 
 ---
 
 # Commit 1: Initial Commit
 
 ## What did you include in this commit?
--
+- Initial project files
 
 ## What was the purpose of this commit?
--
+- To initialize the repository.
 
 ---
 
 # Commit 2: Task 1 (getGrade)
 
 ## Which tests in Task1Test were failing before your fix?
--
+- expected: <Exceeds> but was: <Meets>
+- expected: <Meets> but was: <Does Not Meet>
 
 ## What was the issue in the code?
--
+- Bad conditionals
 
 ## What change did you make to fix it?
--
+- Fixed conditionals with returns
 
 ## How did the tests help guide your fix?
--
+- Checked for proper return values.
 
 ---
 

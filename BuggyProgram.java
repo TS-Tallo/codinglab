@@ -2,15 +2,13 @@ public class BuggyProgram {
 
     // Method 1: nested conditionals
     public static String getGrade(int score) {
-        if (score > 90) {
-            return "Meets";
-        } else {
-            if (score > 80) {
-                return "Exceeds";
-            } else {
-                return "Does Not Meet";
-            }
+        if (score >= 90) {
+            return "Exceeds";
         }
+        if (score >= 80) {
+            return "Meets";
+        }
+        return "Does Not Meet";
     }
 
     // Method 2: loop with array
