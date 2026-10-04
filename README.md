@@ -38,16 +38,18 @@ https://github.com/TS-Tallo/codinglab
 # Commit 3: Task 2 (sumEvenNumbers)
 
 ## Which tests in Task2Test were failing before your fix?
--
+- CodingRoomsUnitTests.testEmpty threw ArrayIndexOutOfBoundsException at index 0
+- CodingRoomsUnitTests.testOddNumbers threw ArrayIndexOutOfBoundsException at index 3
+- CodingRoomsUnitTests.testSumEvenNumbers threw ArrayIndexOutOfBoundsException at index 4
 
 ## What was the issue in the code?
--
+- The loop used `i <= values.length`, so it read one past the last element. The sum also started at 1 instead of 0.
 
 ## What change did you make to fix it?
--
+- Changed the loop to `i < values.length` and started the sum at 0.
 
 ## How did the tests help guide your fix?
--
+- All three failures crashed at an index equal to the array length, including the empty array.
 
 ---
 
